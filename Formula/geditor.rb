@@ -5,6 +5,13 @@ class Geditor < Formula
   version "0.3.0"
   license any_of: ["MIT", "Apache-2.0"]
 
+  bottle do
+    root_url "https://github.com/gromilicx/Geditor/releases/download/v0.3.0"
+    sha256 cellar: :any_skip_relocation, arm64_big_sur: "78dc0c238e5e21b192b0a7800638e86140c61ba1ef6828a76f2b044e910765d0"
+    sha256 cellar: :any_skip_relocation, arm64_linux: "a759669c99f1fa8289a2a5dde053babbe743d0b7c868354d46690af55be565da"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "f2cf8f61ef384f4ac59ff278c4661245b282ee21cd77cf744fc000933523c429"
+  end
+
   on_macos do
     depends_on arch: :arm64
     depends_on macos: :big_sur
